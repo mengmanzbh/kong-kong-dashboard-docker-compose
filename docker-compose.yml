@@ -78,7 +78,7 @@ services:
 
   kong-dashboard:
     image: pgbi/kong-dashboard:v3.5.0
-    command: 'start --kong-url http://172.17.0.1:8001'
+    command: 'start --kong-url http://172.17.0.1:8001 --basic-auth admin=UGPWYpXo@uN^#0Su'
     ports:
       - 8080:8080
     depends_on:
